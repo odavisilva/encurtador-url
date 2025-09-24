@@ -1,0 +1,36 @@
+{
+  "name": "desafio-encurtador-url-backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "Backend do encurtador de URL",
+  "scripts": {
+    "pretest": "prisma generate",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:e2e": "jest tests/e2e"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^24.5.2",
+    "@types/supertest": "^6.0.3",
+    "jest": "^29.7.0",
+    "prisma": "^6.16.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.20.5",
+    "typescript": "^5.4.5"
+  }
+}
