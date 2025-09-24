@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Url` MODIFY `longUrl` VARCHAR(2000) NOT NULL;
